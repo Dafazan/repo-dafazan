@@ -107,7 +107,7 @@ const AudioVisualizer: React.FC = () => {
         analyser.connect(audioContext.destination);
       }
 
-      const analyser = analyserRef.current;
+      const analyser = analyserRef.current!;
       const bufferLength = analyser.frequencyBinCount;
       const dataArray = new Uint8Array(bufferLength);
 

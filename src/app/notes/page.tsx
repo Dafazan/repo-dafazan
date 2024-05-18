@@ -99,7 +99,12 @@ function NotesPage() {
             <div className="w-full h-full flex flex-col gap-1 pb-5 overflow-y-scroll">
               {dataNotes.map((data, i) => (
                 <>
-                  <CardSide key={data.id} name={data.title} author={data.id} />
+                  <CardSide
+                    act={``}
+                    key={data.id}
+                    name={data.title}
+                    author={data.id}
+                  />
                 </>
               ))}
             </div>

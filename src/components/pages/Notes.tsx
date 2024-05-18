@@ -74,7 +74,7 @@ function Notes() {
     <>
       {dataNotes.map((data, i) => (
         <>
-          <CardSide key={data.id} name={data.title} author={data.id} />
+          <div>a</div>
         </>
       ))}
     </>
